@@ -1,3 +1,10 @@
+# Hello :)
+
+My blog (in Hebrew) is at:
+
+https://www.tocode.co.il/blog
+
+
 ## Session 2 - Network
 
 Lab:
