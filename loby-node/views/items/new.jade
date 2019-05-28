@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+  if item.errors
+    p= JSON.stringify(item.errors)
+
+  form(action="/items", method="POST", enctype="multipart/form-data")
+    div.field
+      label name
+        input(type="text", name="name")
+
+    div.field
+      label description
+        input(type="text", name="description")
+
+    div.field
+      label color
+        input(type="color", name="color")
+
+    div.field
+      label price
+        input(type="number", name="price")
+
+    div.field
+      label image
+        input(type="file", name="image", accept="image/*")
+
+    div.field
+      input(type="submit", value="Publish")
+
+
+
